@@ -5,6 +5,7 @@
   display:flex;
   justify-content:space-around ;
   width: 100%;
+  
   /* margin-right: auto; */
   
   /* margin:8px; */
@@ -26,6 +27,8 @@ input{
   color: rgb(18, 18, 39);
   font-family: system-ui;
   font-weight: bold;
+  
+  /* flex-shrink: 1; */
 
   
 }
@@ -37,14 +40,18 @@ input{
   margin:0px;
   font-family:system-ui;
   color:white;
+  
 }
 
 
 .logo{
   font-size:50px;
+  /* position:absolute;
+  left:0px; */
   
   
-
+  
+  /* flex-shrink:5; */
   vertical-align: middle;
 }
 
@@ -52,6 +59,7 @@ input{
 .movie-box{
   display:flex;
   flex-flow: column;
+  box-shadow: 0px 1px 5px 3px rgb(36,37,38,0.61);
 
   background-color: white;
   display: block;
@@ -72,13 +80,22 @@ input{
 }
 
 
+.movie-box:hover{
+  background-color: rgba(18, 18, 39, 0.61);
+  
+}
+
+
 .movie-list{
   display:flex;
   flex-flow: row;
+  align-items:flex-start;
   width: 50%;
   padding:20px;
-  background-color: rgb(18, 18, 39);
+  /* background-color: rgb(18, 18, 39); */
   flex-wrap:wrap;
+  box-shadow: 0px 1px 5px 3px rgb(36,37,38,0.61);
+  /* border: 2px solid rgb(18, 18, 39); */
   margin: 2px;
   margin-top: 6px;
   align-items:center;
@@ -98,7 +115,7 @@ input{
 
 .movie-details{
   
-  font-size: 20px;
+  font-size: 15px;
   padding:0px;
   margin: 0px;
   background-color: rgb(18, 18, 39);
@@ -123,12 +140,12 @@ input{
   flex-direction: column;
   /* display: block; */
   background-color: white;
-  height:800px;
+  height:832px;
   margin: 0px;
   margin-top: 6px;
   align-items:center;
   width:50%;
-  border:16px solid rgb(18, 18, 39);
+  box-shadow: 0px 1px 5px 3px rgb(36,37,38,0.61);
   padding: 4px;
 }
 
@@ -138,23 +155,24 @@ input{
 .watch-list-blank{
   display: flex;
 
-  
-
-  height:800px;
+  box-shadow: 0px 1px 5px 3px rgb(36,37,38,0.61);
+  justify-content: center;
+  height:832px;
   margin: 0px;
   margin-top: 6px;
-  /* align-items:center; */
+  align-items:center;
   
   
   width: 50%;
-  border:16px solid rgb(18, 18, 39);
+  
   padding: 4px;
   
   background-color: white;
-  color:rgb(36,37,38);
+  color:white;
   font-family:system-ui;
   text-align: center;
   font-weight: bold;
+  
 
 }
 
@@ -199,22 +217,33 @@ input{
   height: 120px;
   width: 100%;
   border-radius: 8px;
+  object-fit: contain;
   /* background-color: aqua; */
 
 }
 .image2{
   position: relative;
   height: 400px;
+  object-fit:contain;
   
   width: 100%;
   border-radius: 8px;
   /* background-color: aqua; */
 }
 
-.watch-list-blank p{
-  padding-top:100px;
+.welcome{
+  /* margin-top: 100px; */
+  /* padding-top:100px; */
+  position:relative;
   font-size :100px;
-  color:rgb(18, 18, 39);
+  color:white;
+  width: 60%;
+  text-align: center;
+  padding:40px;
+  border-radius: 8px;
+  background-color: rgb(18, 18, 39);  
+  box-shadow: 0px 1px 5px 5px rgb(36,37,38,0.61);
+  /* position:absolute; */
  
 }
 
@@ -228,10 +257,10 @@ input{
   font-weight:bold;
   border-radius:8px;
   height:50%;
-  width:91%;
+  width:90%;
   padding:40px;
   align-items:center;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   margin-top:4px;
   margin-bottom:4px;
@@ -264,12 +293,13 @@ input{
     font-weight:bold;
     border-radius:8px;
     height:395px;
-    width:200px;
+    width:150px;
     padding:40px;
+    margin-top: 4px;
     align-items:center;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    margin-top:300px;
+    
     margin-left:4px;
     margin-right:4px;
   }

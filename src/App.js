@@ -199,7 +199,7 @@ function Blank(){
   return(
     <div className='watch-list-blank'>
 
-      <p>Welcome To Movie Buzz</p>
+      <div className='welcome'>Welcome to Movie Buzz</div>
 
     </div>
   )
