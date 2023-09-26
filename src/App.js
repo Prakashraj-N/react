@@ -2,6 +2,8 @@
 // import { useState } from 'react';
 import { useState } from 'react';
 import './App.css';
+// import Link from 'next/link'
+// import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
 
@@ -153,6 +155,16 @@ export default function App() {
 
 
     <div >
+      
+      
+      {/* <BrowserRouter>
+      <Routes>
+      <Route path='google.com'/>
+      </Routes>
+      </BrowserRouter> */}
+
+
+
       <Navbar controlInput={controlInput}/>
       <div className='app'>
       {
@@ -215,7 +227,7 @@ function Watchlist({moviegot}){
 
 
     const {id,name,director,src}  = moviegot;
-
+    
 
 
      return(
@@ -231,13 +243,27 @@ function Watchlist({moviegot}){
 
       
 
-          <p> Id :  {id}</p>
+          <div className='name'>
+            <p> Id :  {id}</p>
 
-          <p>Name :  {name}</p>
+            <p>Name :  {name}</p>
 
 
-          <p>Director : {director}</p>
-      
+            <p>Director : {director}</p>
+          </div>
+
+
+          <div className='button'>
+          <button>
+            <a href={`https://www.youtube.com/results?search_query=${name}+trailer`} target="_blank" rel='noopener noreferrer'>🎦 Click here to watch trailer</a>
+          </button>
+          </div>
+          
+
+          {/* <link to="google.com">click me</link> */}
+              
+          {/* <link to="youtube">click to watch traielr</link> */}
+
           </div>
           
         </div>
