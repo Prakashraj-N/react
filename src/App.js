@@ -87,7 +87,7 @@ export default function App() {
   useEffect(function(){
     async function fetchMovies(){
       try{
-        const res= await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${Key}&s=${query}`)
+        const res= await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${Key}&s=${query}`);
         const data = await res.json();
 
         if (data.Response === "False") throw new Error ("Not Found")
