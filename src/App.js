@@ -156,7 +156,10 @@ export default function App() {
   function controlInput(event){
     const input = event.target.value;
     
-    setquery(input)
+    setquery(input);
+
+
+    
     
   
   }

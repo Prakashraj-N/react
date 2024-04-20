@@ -128,6 +128,7 @@ input{
   font-weight:bold;
   border-radius:8px;
   text-align: center;
+  
 
 }
 
@@ -288,75 +289,109 @@ input{
   /* margin:2px */
   flex-flow: row;
 }
-@media (max-width:760px){
-  .watch-details{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(18, 18, 39);
-    margin:0px;
-    padding:0px;
-    color:white;
-    font-family:system-ui;
-    font-weight:bold;
-    border-radius:8px;
-    height:395px;
-    width:150px;
-    padding:40px;
-    margin-top: 4px;
-    align-items:center;
-    font-size: 20px;
-    text-align: center;
-    
-    margin-left:4px;
-    margin-right:4px;
-  }
-  .welcome{
-    font-size: 40px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-}
-
-.name{
-  flex-grow:2;
-}
 
 
 
-
-/* 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 */
-
-
-  button{
-  color:white;
-  padding:0px;
-  width:600px;
-  border-style: none;
-  /* background-color: white;  */
-  
-  
-  border-radius:8px;
-
-
-  /* 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 */
-  
-  
-  
-  
-
-
-  
-
-
-  
-
-}
 
 a{
   text-decoration: none;
-  font-size:20px;
-  font-family:System-ui;
-  color:rgb(18, 18, 39);
+  color: rgb(18, 18, 39);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:760px){
+
+
+  .title{
+    display: none;
+  }
+
+
+  input{
+    width: 80%;
+    padding:4px;
+    font-size: 18px;
+  }
+
+  .app{
+    flex-direction: column;
+  }
+
+
+  .movie-list{
+    width:100%;
+    height:35vh;
+    flex-flow: column;
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding: 20px 0px;
+  }
+
+
+  .watch-list-blank{
+    height:40vh;
+    width: 98%;
+
+  }
+
+
+  .watch-list{
+    height:45vh;
+    width: 98%;
+
+  }
+
+
+  .welcome{
+    width:80%;
+    font-size: 40px;
+    padding: 20px;
+
+  }
+  
+
+  .image2{
+    height: 150px;
+  }
+
+  .watch-details{
+    padding: 0px 10px;
+    height:250px;
+  }
+
+  .logo{
+    font-size: 40px;
+  }
+
+
+  .movie-box{
+    width: 150px;
+    height: 240px;
+  }
+
+  .img1{
+    height: 100px;
+  }
+
+
+  .movie-details{
+    height: 80px;
+    
+    
+  }
+
+
+
 }
